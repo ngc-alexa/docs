@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Responsibility & Contacts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f8fa;
+        }
+        h1 {
+            color: #23608e;
+            text-align: center;
+        }
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 12px 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e7eff6;
+            color: #1a3556;
+        }
+        tr:nth-child(even) {
+            background-color: #f6fafd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Society Responsibility & Contacts</h1>
+    <table>
+        <tr>
+            <th>Responsibility</th>
+            <th>Assigned Person</th>
+            <th>Contact Number</th>
+        </tr>
+        <tr>
+            <td>Water management (repairs, maintenance, complaints, resident notifications)</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Tenant management (introduction, tracker, expiry, renewal, notices)</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Resale introductions; owner master data tracker</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Finance, Maintenance, NOC issuance</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Water meter installation</td>
+            <td>Rohan</td>
+            <td><a class="fw-normal mb-1" href="tel:9830074986">9830074986</a></td>
+        </tr>
+        <tr>
+            <td>Amenities (maintenance, rules, tenant charges, renewals)</td>
+            <td>?</td>
+           <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Security services (issues and solutions)</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Shop area (charges, parking, discipline, security, collections, renewals)</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Common area maintenance and complaints</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Housekeeping (maintenance and complaints)</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>CCTV & Biometrics (maintenance and complaints)</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Leakage/flat issues raised by residents</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>Parking follow-up with JP</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>AMC renewals & email correspondences</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+        <tr>
+            <td>MyGate management</td>
+            <td>?</td>
+            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
+        </tr>
+    </table>
+</body>
+</html>
