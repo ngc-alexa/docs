@@ -1,139 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Society Responsibility & Contacts</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f5f8fa;
-        }
-        h1 {
-            color: #23608e;
-            text-align: center;
-        }
-        table {
-            width: 90%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        th, td {
-            border: 1px solid #cccccc;
-            padding: 12px 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #e7eff6;
-            color: #1a3556;
-        }
-        tr:nth-child(even) {
-            background-color: #f6fafd;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Society Responsibilities & Contacts</title>
+
+<style>
+    :root {
+        --primary: #1f4f7a;
+        --secondary: #eaf2f8;
+        --accent: #2c7be5;
+        --border: #d9e2ec;
+        --bg: #f4f7fb;
+        --text: #2d3748;
+    }
+
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: var(--bg);
+        margin: 0;
+        padding: 30px;
+        color: var(--text);
+    }
+
+    h1 {
+        text-align: center;
+        color: var(--primary);
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #5f6c7b;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 900px;
+    }
+
+    th, td {
+        padding: 14px 12px;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+    }
+
+    th {
+        background-color: var(--secondary);
+        color: var(--primary);
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    tr:hover {
+        background-color: #f9fbfd;
+    }
+
+    td:first-child {
+        font-weight: 600;
+        color: #1a365d;
+    }
+
+    a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .badge {
+        display: inline-block;
+        background: #edf2ff;
+        color: #2c7be5;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 13px;
+        color: #718096;
+    }
+</style>
 </head>
+
 <body>
-    <h1>Society Responsibility & Contacts</h1>
-    <table>
-        <tr>
-            <th>Responsibility</th>
-            <th>Details</th>
-            <th>Assigned Person</th>
-            <th>Contact Number</th>
-        </tr>
-        <tr>
-            <td>Water management (repairs, maintenance, complaints, resident notifications)</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Tenant management (introduction, tracker, expiry, renewal, notices)</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Resale introductions; owner master data tracker</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Finance, Maintenance, NOC issuance</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Water meter installation</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Amenities (maintenance, rules, tenant charges, renewals)</td>
-            <td>?</td>
-            <td>?</td>
-           <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Security services (issues and solutions)</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Shop area (charges, parking, discipline, security, collections, renewals)</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Common area maintenance and complaints</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Housekeeping (maintenance and complaints)</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>CCTV & Biometrics (maintenance and complaints)</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Leakage/flat issues raised by residents</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>Parking follow-up with JP</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>AMC renewals & email correspondences</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-        <tr>
-            <td>MyGate management</td>
-            <td>?</td>
-            <td>?</td>
-            <td><a class="fw-normal mb-1" href="tel:?">?</a></td>
-        </tr>
-    </table>
+
+<h1>🏢 Alexa - Society Responsibilities & Contact Directory (2025-26 -> 2030-31)</h1>
+<p class="subtitle">
+    Clear ownership for smooth operations • Reach out to the right person for faster resolution
+</p>
+
+<div class="table-container">
+<table>
+    <tr>
+        <th>Responsibility Area</th>
+        <th>Scope / Details</th>
+        <th>Assigned Committee Member</th>
+        <th>Contact</th>
+    </tr>
+
+    <tr>
+        <td>Water Management</td>
+        <td>Repairs, maintenance, complaint handling, supply notifications</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Tenant Management</td>
+        <td>Tenant onboarding, agreements, renewals, expiry tracking & notices</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Resale & Owner Records</td>
+        <td>Resale introductions, owner master data maintenance</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Finance & Maintenance NOCs</td>
+        <td>
+            Issuance of Maintenance & Monetary NOCs  
+            <br><strong>Note:</strong> Treasurer signature mandatory
+        </td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Water Meter Installation</td>
+        <td>New installations, replacements, vendor coordination</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Amenities Management</td>
+        <td>Usage rules, maintenance, tenant charges, renewals</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Security Services</td>
+        <td>Guards, shifts, incidents, vendor coordination</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Shop Area Management</td>
+        <td>Charges, discipline, collections, renewals, security</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Common Area Maintenance</td>
+        <td>Encroachments, cleanliness, resident complaints</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Housekeeping</td>
+        <td>Cleaning schedules, staff issues, complaint resolution</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Society Office Staff</td>
+        <td>Attendance, performance, daily operations</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Society Office Management</td>
+        <td>Office operations, filing, SOPs, documentation</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>MST Management</td>
+        <td>Issue tracking, staff monitoring, escalation management</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>CCTV & Biometrics</td>
+        <td>Maintenance, vendor coordination, access issues</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Leakage & Flat Issues</td>
+        <td>Resident complaints, coordination with plumbers & vendors</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Two-Wheeler Parking</td>
+        <td>Allocation, tenant parking, external coordination</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>AMC Renewals</td>
+        <td>Tracking, renewals, vendor negotiations</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>MyGate Management</td>
+        <td>User access, configuration, issue resolution</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Visitor Management</td>
+        <td>Maid & staff verification, delivery policies</td>
+        <td>Security In-charge</td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Revenue Generation</td>
+        <td>New income ideas, execution, vendor tie-ups</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>RWH, Solar & STP</td>
+        <td>Operation, maintenance & compliance</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+
+    <tr>
+        <td>Technical Enablement</td>
+        <td>Anything related to technology, making things more transpaent or scalable</td>
+        <td><span class="badge">To be assigned</span></td>
+        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
+    </tr>
+    
+</table>
+</div>
+
+<footer>
+    © Society Management Committee • Updated for transparency & efficiency
+</footer>
+
 </body>
 </html>
