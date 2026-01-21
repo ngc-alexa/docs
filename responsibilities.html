@@ -1,286 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Society Responsibilities & Contacts</title>
 
 <style>
-    :root {
-        --primary: #1f4f7a;
-        --secondary: #eaf2f8;
-        --accent: #2c7be5;
-        --border: #d9e2ec;
-        --bg: #f4f7fb;
-        --text: #2d3748;
-    }
+:root{
+    --primary:#1f4f7a;
+    --secondary:#eaf2f8;
+    --accent:#2c7be5;
+    --border:#d9e2ec;
+    --bg:#f4f7fb;
+    --text:#2d3748;
+}
 
-    body {
-        font-family: "Segoe UI", Arial, sans-serif;
-        background-color: var(--bg);
-        margin: 0;
-        padding: 30px;
-        color: var(--text);
-    }
+body{
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:var(--bg);
+    padding:30px;
+    color:var(--text);
+}
 
-    h1 {
-        text-align: center;
-        color: var(--primary);
-        margin-bottom: 10px;
-    }
+h1{text-align:center;color:var(--primary)}
+.subtitle{text-align:center;margin-bottom:25px;color:#5f6c7b}
 
-    .subtitle {
-        text-align: center;
-        color: #5f6c7b;
-        margin-bottom: 30px;
-        font-size: 14px;
-    }
+.table-container{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    overflow-x:auto;
+}
 
-    .table-container {
-        overflow-x: auto;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-        padding: 20px;
-    }
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:1100px;
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        min-width: 900px;
-    }
+th,td{
+    padding:14px;
+    border-bottom:1px solid var(--border);
+    vertical-align:top;
+}
 
-    th, td {
-        padding: 14px 12px;
-        border-bottom: 1px solid var(--border);
-        vertical-align: top;
-    }
+th{
+    background:var(--secondary);
+    font-size:12px;
+    text-transform:uppercase;
+    color:var(--primary);
+}
 
-    th {
-        background-color: var(--secondary);
-        color: var(--primary);
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 0.5px;
-    }
+/* OWNER PILLS */
+.owner{
+    display:inline-block;
+    background:#edf2ff;
+    color:#2c7be5;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+    margin:4px 6px 4px 0;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:all .2s ease;
+}
 
-    tr:hover {
-        background-color: #f9fbfd;
-    }
+.owner[data-role="primary"]{
+    border:1px solid #2c7be5;
+}
 
-    td:first-child {
-        font-weight: 600;
-        color: #1a365d;
-    }
+.owner[data-role="secondary"]{
+    border:1px dashed #94a3b8;
+    background:#f8fafc;
+    color:#475569;
+}
 
-    a {
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 500;
-    }
+.owner:hover{
+    background:#dbe8ff;
+    transform:translateY(-1px);
+    box-shadow:0 2px 6px rgba(44,123,229,.25);
+}
 
-    a:hover {
-        text-decoration: underline;
-    }
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    align-items:center;
+    justify-content:center;
+    z-index:1000;
+}
 
-    .badge {
-        display: inline-block;
-        background: #edf2ff;
-        color: #2c7be5;
-        padding: 4px 8px;
-        border-radius: 6px;
-        font-size: 12px;
-        margin-top: 4px;
-    }
+.modal-content{
+    background:#fff;
+    width:90%;
+    max-width:520px;
+    border-radius:12px;
+    padding:22px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
 
-    footer {
-        text-align: center;
-        margin-top: 25px;
-        font-size: 13px;
-        color: #718096;
-    }
+.modal h2{margin-top:0;color:var(--primary)}
+.close{
+    float:right;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.section-title{
+    margin-top:16px;
+    font-weight:700;
+    color:#1a365d;
+}
+
+ul{margin:8px 0 0 18px}
 </style>
 </head>
 
 <body>
 
-<h1>🏢 Alexa - Society Responsibilities & Contact Directory (2025-26 -> 2030-31)</h1>
-<p class="subtitle">
-    Clear ownership for smooth operations • Reach out to the right person for faster resolution
-</p>
+<h1>🏢 Alexa – Society Responsibilities & Contact Directory</h1>
+<p class="subtitle">Click on any committee member to view contact & ownership details</p>
 
 <div class="table-container">
 <table>
-    <tr>
-        <th>Responsibility Area</th>
-        <th>Scope / Details</th>
-        <th>Assigned Committee Member</th>
-        <th>Contact</th>
-    </tr>
-
-    <tr>
-        <td>Water Management</td>
-        <td>Repairs, maintenance, complaint handling, supply notifications</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Tenant Management</td>
-        <td>Tenant onboarding, agreements, renewals, expiry tracking & notices</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Resale Introductions & Owner Records</td>
-        <td>Resale introductions, owner master data maintenance</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Finance, Maintenance NOCs</td>
-        <td>
-            Manage Society maintenance, Issuance monetary related NOCs, Vendor payments 
-            <br><strong>Note:</strong> Treasurer signature mandatory on Financial/Monatory NOCs
-        </td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Water Meter Installation</td>
-        <td>New installations, replacements, vendor coordination</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Amenities Management</td>
-        <td>Usage rules, maintenance, tenant charges, renewals, resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Security Services</td>
-        <td>Staff monitoring, Incident reports, Vendor coordination, Resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Shop Area Management</td>
-        <td>Maintain cleanliness, Charges, discipline, collections, renewals, security, resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Common Area Maintenance</td>
-        <td>Encroachments, cleanliness, resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Housekeeping</td>
-        <td>Cleaning schedules, staff monitoring, vendor coordination, resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Society Office Staff</td>
-        <td>Attendance, performance, vendor coordination, resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Society Office Management</td>
-        <td>Office operations, filing, SOPs, documentation</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>MST Management</td>
-        <td>Issue tracking, staff monitoring, vendor coordination, resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>CCTV & Biometrics</td>
-        <td>Maintenance, vendor coordination, access issues</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Leakage & Flat Issues</td>
-        <td>Coordination with JP and MST, resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Two-Wheeler Parking</td>
-        <td>MLCP JP coordination, shop area, sticker allocation, resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>AMC Renewals</td>
-        <td>Tracking, renewals, vendor negotiations</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>MyGate Management</td>
-        <td>User access, configuration, issue resolution, resident complaints</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Visitor Management</td>
-        <td>Maid & staff verification, delivery policies</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Revenue Generation</td>
-        <td>New income ideas, execution, vendor tie-ups</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>RWH, Solar & STP</td>
-        <td>Operation, maintenance & compliance</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-
-    <tr>
-        <td>Technical Enablement</td>
-        <td>Anything related to technology, making things more transparent & scalable</td>
-        <td><span class="badge">To be assigned</span></td>
-        <td><a href="tel:XXXXXXXXXX">XXXXXXXXXX</a></td>
-    </tr>
-    
+<thead>
+<tr>
+    <th>Responsibility Area</th>
+    <th>Scope / Details</th>
+    <th>Primary Owner(s)</th>
+    <th>Secondary Owner(s)</th>
+</tr>
+</thead>
+<tbody id="tableBody"></tbody>
 </table>
 </div>
 
-<footer>
-    © Society Management Committee • Updated for transparency & efficiency
-</footer>
+<!-- MODAL -->
+<div class="modal" id="ownerModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h2 id="modalName"></h2>
+        <p>📞 <a id="modalPhone" href=""></a></p>
+
+        <div class="section-title">Primary Responsibilities</div>
+        <ul id="primaryList"></ul>
+
+        <div class="section-title">Secondary Responsibilities</div>
+        <ul id="secondaryList"></ul>
+    </div>
+</div>
+
+<script>
+// -------- CONTACTS --------
+const owners = {
+    "Dnyanesh":"9000000001","Ankur":"9000000002","Himani":"9000000003",
+    "Sushum":"9000000004","Ameya":"9000000005","Ritesh":"9000000006",
+    "Nikhil Patel":"9000000007","Rohan":"9000000008","Mayank":"9000000009",
+    "Hitesh":"9000000010","Nikhil Shetty":"9000000011","Deepak":"9000000012",
+    "Saurabh":"9000000013","Pranav":"9000000014","Vardhman":"9000000015",
+    "Gaurav":"9000000016","Prashant":"9000000017","Tushar":"9000000018"
+};
+
+// -------- RESPONSIBILITIES --------
+const responsibilities = [
+{ name:"Water Management", scope:"Repairs, maintenance, supply issues", primary:["Dnyanesh","Ankur"], secondary:[] },
+{ name:"Tenant Management", scope:"Tenant onboarding & renewals", primary:["Himani","Sushum"], secondary:[] },
+{ name:"Resale Introduction", scope:"Resale & owner records", primary:["Himani","Sushum"], secondary:[] },
+{ name:"Finance Maintenance", scope:"Maintenance & financial NOCs", primary:["Ameya","Ritesh","Nikhil Patel"], secondary:[] },
+{ name:"Water Meter Installation", scope:"Installations & replacements", primary:["Rohan","Mayank","Hitesh"], secondary:[] },
+{ name:"Amenities Management", scope:"Amenities usage & maintenance", primary:["Nikhil Shetty","Deepak","Saurabh"], secondary:[] },
+{ name:"Security Services", scope:"Security staff & incidents", primary:["Pranav","Saurabh","Nikhil Patel"], secondary:[] },
+{ name:"Shop Area Management", scope:"Shop operations", primary:["Vardhman"], secondary:[] },
+{ name:"Common Area Management", scope:"Common areas & encroachment", primary:["Rohan","Ameya", "Gaurav","Prashant"], secondary:[] },
+{ name:"Housekeeping", scope:"Cleaning & staff", primary:["Pranav","Prashant","Deepak"], secondary:["Ritesh"] },
+{ name:"Society Office Management", scope:"Office operations", primary:["Himani","Pranav"], secondary:[] },
+{ name:"MST Management", scope:"MST coordination", primary:["Nikhil Patel","Saurabh"], secondary:[] },
+{ name:"CCTV, Biometric & Intercom", scope:"Surveillance & access systems", primary:["Hitesh","Mayank","Rohan","Gaurav"], secondary:[] },
+{ name:"Leakage & Flat Issues", scope:"Leakage coordination", primary:["Nikhil Shetty","Tushar"], secondary:[] },
+{ name:"Two Wheeler Parking", scope:"Parking allocation", primary:["Himani","Pranav"], secondary:[] },
+{ name:"AMC Renewals", scope:"AMC tracking & renewals", primary:["Gaurav","Prashant"], secondary:["Tushar","Nikhil Shetty"] },
+{ name:"MyGate Management", scope:"MyGate system", primary:["Gaurav"], secondary:["Rohan","Hitesh","Mayank"] },
+{ name:"Visitor Management", scope:"Visitor & maid management", primary:["Dnyanesh","Himani","Rohan","Saurabh"], secondary:[] },
+{ name:"Revenue Generation", scope:"New income sources", primary:["Prashant","Pranav","Ankur"], secondary:[] },
+{ name:"RWH, Solar & STP", scope:"Green initiatives", primary:["Hitesh","Nikhil Shetty","Tushar"], secondary:[] },
+{ name:"Technical Enablement", scope:"Technology & automation", primary:["Hitesh","Mayank"], secondary:[] },
+{ name:"Fire System Maintenance, Training & Compliance", scope:"maintenance of Fire System, Regular Training of Society Staff, Mock Drills, Compliance with MBMC Fire control bodies", primary:["Hitesh","Tushar", "Nikhil Patel"], secondary:[] },
+{ name:"Festivals & Events", scope:"Organizing all festivals and events within Society premises", primary:["Prashant","Nikhil Patel", ,"Deepak Pawar"], secondary:[] },
+];
+
+// -------- RENDER TABLE --------
+const tbody = document.getElementById("tableBody");
+
+const ownersHtml = (arr, role) =>
+    arr.map(o => `<span class="owner" data-role="${role}" onclick="openModal('${o}')">${o}</span>`).join("");
+
+responsibilities.forEach(r=>{
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+        <td>${r.name}</td>
+        <td>${r.scope}</td>
+        <td>${ownersHtml(r.primary,"primary")}</td>
+        <td>${r.secondary.length ? ownersHtml(r.secondary,"secondary") : "-"}</td>
+    `;
+    tbody.appendChild(tr);
+});
+
+// -------- MODAL LOGIC --------
+function openModal(name){
+    document.getElementById("modalName").innerText = name;
+
+    const phone = owners[name] || "N/A";
+    const phoneEl = document.getElementById("modalPhone");
+    phoneEl.innerText = phone;
+    phoneEl.href = phone === "N/A" ? "#" : "tel:"+phone;
+
+    const pList = document.getElementById("primaryList");
+    const sList = document.getElementById("secondaryList");
+    pList.innerHTML = "";
+    sList.innerHTML = "";
+
+    responsibilities.forEach(r=>{
+        if(r.primary.includes(name)) pList.innerHTML += `<li>${r.name}</li>`;
+        if(r.secondary.includes(name)) sList.innerHTML += `<li>${r.name}</li>`;
+    });
+
+    if(!pList.innerHTML) pList.innerHTML = "<li>None</li>";
+    if(!sList.innerHTML) sList.innerHTML = "<li>None</li>";
+
+    document.getElementById("ownerModal").style.display="flex";
+}
+
+function closeModal(){
+    document.getElementById("ownerModal").style.display="none";
+}
+</script>
 
 </body>
 </html>
