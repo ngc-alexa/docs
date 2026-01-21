@@ -46,12 +46,6 @@
       align-items: center;
       gap: 16px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .member-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
     }
 
     .member-photo {
@@ -63,10 +57,6 @@
       flex-shrink: 0;
     }
 
-    .member-info {
-      line-height: 1.4;
-    }
-
     .member-name {
       font-size: 1.05rem;
       font-weight: 600;
@@ -75,6 +65,7 @@
 
     .member-role {
       font-size: 0.9rem;
+      font-weight: 600;
       color: #2563eb;
       margin: 4px 0;
     }
@@ -91,45 +82,206 @@
       color: #111827;
       font-weight: 500;
     }
-
-    .member-phone:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Alexa- Management Committee Members - 2025-26 -> 2030-31</h1>
-  </header>
+<header>
+  <h1>Alexa – Management Committee Members (2025–26 → 2030–31)</h1>
+</header>
 
-  <main>
-    <section class="members-grid">
+<main>
+<section class="members-grid">
 
-      <!-- Member -->
-      <div class="member-card">
-        <img src="images/dnyaneshwar-patil.png" alt="Dnyaneshwar Patil" class="member-photo" />
-        <div class="member-info">
-          <p class="member-name">Dnyaneshwar Patil</p>
-          <p class="member-role">Member</p>
-          <p class="member-flat">A-309</p>
-          <a class="member-phone" href="tel:7276186700">7276186700</a>
-        </div>
-      </div>
-      
-      <div class="member-card">
-        <img src="images/hitesh-katariya.jpg" alt="Hitesh Katariya" class="member-photo" />
-        <div class="member-info">
-          <p class="member-name">Hitesh Katariya</p>
-          <p class="member-role">Member</p>
-          <p class="member-flat">A-707</p>
-          <a class="member-phone" href="tel:9929335632">9929335632</a>
-        </div>
-      </div>
+  <!-- Chairman -->
+  <div class="member-card">
+    <img src="images/tushar-trivedi.png" class="member-photo" />
+    <div>
+      <p class="member-name">Tushar Trivedi</p>
+      <p class="member-role">Chairman</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:7738342177">7738342177</a>
+    </div>
+  </div>
 
-      <!-- Repeat same card structure for remaining members -->
+  <!-- Secretary -->
+  <div class="member-card">
+    <img src="images/nikhil-shetty.png" class="member-photo" />
+    <div>
+      <p class="member-name">Nikhil Shetty</p>
+      <p class="member-role">Secretary</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:8655222979">8655222979</a>
+    </div>
+  </div>
 
-    </section>
-  </main>
+  <!-- Treasurer -->
+  <div class="member-card">
+    <img src="images/ameya-rane.png" class="member-photo" />
+    <div>
+      <p class="member-name">Ameya Rane</p>
+      <p class="member-role">Treasurer</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9869192201">9869192201</a>
+    </div>
+  </div>
+
+  <!-- Apex Representatives -->
+  <div class="member-card">
+    <img src="images/dnyaneshwar-patil.png" class="member-photo" />
+    <div>
+      <p class="member-name">Dnyaneshwar Patil</p>
+      <p class="member-role">Apex Representative</p>
+      <p class="member-flat">A-309</p>
+      <a class="member-phone" href="tel:7276186700">7276186700</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/himani-agarwal.png" class="member-photo" />
+    <div>
+      <p class="member-name">Himani Agarwal</p>
+      <p class="member-role">Apex Representative</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9606111985">9606111985</a>
+    </div>
+  </div>
+
+  <!-- Vice Chairman -->
+  <div class="member-card">
+    <img src="images/prashant-bawaria.png" class="member-photo" />
+    <div>
+      <p class="member-name">Prashant Bawaria</p>
+      <p class="member-role">Vice Chairman</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9270050000">9270050000</a>
+    </div>
+  </div>
+
+  <!-- Joint Secretary -->
+  <div class="member-card">
+    <img src="images/pranav-shetty.png" class="member-photo" />
+    <div>
+      <p class="member-name">Pranav Shetty</p>
+      <p class="member-role">Joint Secretary</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9004118862">9004118862</a>
+    </div>
+  </div>
+
+  <!-- Joint Treasurer -->
+  <div class="member-card">
+    <img src="images/ritesh-gupta.png" class="member-photo" />
+    <div>
+      <p class="member-name">Ritesh Gupta</p>
+      <p class="member-role">Joint Treasurer</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9819012576">9819012576</a>
+    </div>
+  </div>
+
+  <!-- Members -->
+  <div class="member-card">
+    <img src="images/ankur-naik.png" class="member-photo" />
+    <div>
+      <p class="member-name">Ankur Naik</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:7666483725">7666483725</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/sushum-yadav.png" class="member-photo" />
+    <div>
+      <p class="member-name">Sushum Yadav</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9769985427">9769985427</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/nikhil-patel.png" class="member-photo" />
+    <div>
+      <p class="member-name">Nikhil Patel</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9833828492">9833828492</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/rohan-bhattacharya.png" class="member-photo" />
+    <div>
+      <p class="member-name">Rohan Bhattacharya</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9830074986">9830074986</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/mayank-patel.png" class="member-photo" />
+    <div>
+      <p class="member-name">Mayank Patel</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9699077164">9699077164</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/hitesh-katariya.jpg" class="member-photo" />
+    <div>
+      <p class="member-name">Hitesh Katariya</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">A-707</p>
+      <a class="member-phone" href="tel:9929335632">9929335632</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/deepak-pawar.png" class="member-photo" />
+    <div>
+      <p class="member-name">Deepak Pawar</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9619665775">9619665775</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/saurabh-singh.png" class="member-photo" />
+    <div>
+      <p class="member-name">Saurabh Singh</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9833414937">9833414937</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/vardhman-sethia.png" class="member-photo" />
+    <div>
+      <p class="member-name">Vardhman Sethia</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:9773566530">9773566530</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img src="images/gaurav-jain.png" class="member-photo" />
+    <div>
+      <p class="member-name">Gaurav Jain</p>
+      <p class="member-role">Member</p>
+      <p class="member-flat">—</p>
+      <a class="member-phone" href="tel:8050657759">8050657759</a>
+    </div>
+  </div>
+
+</section>
+</main>
 </body>
 </html>
